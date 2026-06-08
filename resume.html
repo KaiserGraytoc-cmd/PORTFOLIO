@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KaiserG | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f1f5f9;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* ====== SECTIONS ====== */
+    section {
+      padding: 100px 60px;
+      min-height: 100vh;
+    }
+
+    /* ====== HOME ====== */
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to bottom right, #1e293b, #0f172a);
+      background-image:url(solo1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #home img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    #home p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      max-width: 600px;
+    }
+
+    /* ====== ABOUT ====== */
+    #about {
+      background: #1e293b;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    /* ====== SKILLS ====== */
+    #skills {
+      background: #0f172a;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill h3 {
+      margin-bottom: 5px;
+    }
+
+    .bar {
+      background: #334155;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 10px;
+    }
+
+    .progress {
+      background: #38bdf8;
+      height: 10px;
+      width: 0;
+      transition: width 1.5s ease-in-out;
+    }
+
+    /* ====== PROJECTS ====== */
+    #projects {
+      background: #1e293b;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #0f172a;
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .project-card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    /* ====== CONTACT ====== */
+    #contact {
+      text-align: center;
+      background: #0f172a;
+    }
+
+    #contact h2 {
+      font-size: 2rem;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    #contact a {
+      display: inline-block;
+      margin: 10px;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    #contact a:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>DaytocN</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <!-- 🖼️ PROFILE PICTURE -->
+    <img src="daytocg.jpg" alt="Profile Picture" />
+
+    <h2>Hello, I'm <span style="color:#38bdf8;">Daytoc Neo</span></h2>
+    <p>A passionate front-end developer skilled in HTML, CSS, and JavaScript. I build clean, responsive, and interactive websites.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a web developer focused on creating modern, visually appealing, and user-friendly web experiences.
+      My goal is to combine aesthetics with functionality and ensure every project delivers real value.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <h3>HTML</h3>
+      <div class="bar"><div class="progress" data-skill="90"></div></div>
+    </div>
+    <div class="skill">
+      <h3>CSS</h3>
+      <div class="bar"><div class="progress" data-skill="85"></div></div>
+    </div>
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <div class="bar"><div class="progress" data-skill="80"></div></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A sleek personal portfolio showcasing my web development skills and projects.</p>
+      </div>
+      <div class="project-card">
+        <h3>Responsive Landing Page</h3>
+        <p>Modern landing page built with HTML, CSS Flexbox, and JavaScript animations.</p>
+      </div>
+      <div class="project-card">
+        <h3>Interactive To-Do App</h3>
+        <p>JavaScript-powered to-do list with local storage and smooth UX design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:yourname@email.com">Email Me</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+  </section>
+
+  <footer>
+    © 2025 DaytocN | Built with ❤️ using HTML, CSS & JS
+  </footer>
+
+  <script>
+    // Animate skill bars on scroll
+    const skills = document.querySelectorAll('.progress');
+    const revealSkills = () => {
+      const triggerBottom = window.innerHeight * 0.8;
+      skills.forEach(skill => {
+        const skillTop = skill.getBoundingClientRect().top;
+        if (skillTop < triggerBottom) {
+          skill.style.width = skill.dataset.skill + '%';
+        }
+      });
+    };
+    window.addEventListener('scroll', revealSkills);
+  </script>
+</body>
+</html>
